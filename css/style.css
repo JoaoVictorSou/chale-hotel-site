@@ -9,7 +9,6 @@ body {
     margin: 15px;
 }
 .container {
-    background: #ede9cc;
     margin: 0 auto;
     min-width: 800px;
     max-width: 1180px;
@@ -92,4 +91,71 @@ header nav {
 }
 #nav-container #menu img {
     float: right;
+}
+
+/*Corpo do site*/
+main {
+    background: url(../img/bg-container.png) top center repeat-y;
+}
+main .primary, main aside {
+    padding: 20px 0;
+}
+main .primary {
+    float: left;
+    background: url(../img/bg-area-principal.png) top left repeat-x;
+    width: 50%;
+}
+main aside {
+    float: right;
+    
+    background: url(../img/bg-area-lateral.png) top left repeat-x;
+    width: 50%;
+}
+.primary .containerbox, aside .containerbox {
+    margin: 0 auto;
+    width: 90%;
+}
+.containerbox h2 {
+    font-size: 1.1em;
+    color: #7d7640;
+}
+
+/*Corpo do site: área principal*/
+.primary .containerbox p {
+    font-size: 1em;
+    margin-top: 5px;
+}
+.primary .containerbox p + p {
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+/*Corpo do site: área lateral*/
+aside ul li {
+    border-bottom: 1px solid #f3efcb;
+}
+aside ul li:nth-last-child(1) {
+    border-bottom: none;
+}
+aside ul li a {
+    display: block;
+    padding: 10px;
+    font-size: 0.9em;
+    height: 96px;
+}
+aside ul li a:hover {
+    background-color: #f3efcb;
+}
+aside ul li a img {
+    width: 150px;
+    margin-right: 8px;
+    float: left;
+}
+aside ul li a h2 {
+    padding: 5px;
+    background: url(../img/ornamento.png) no-repeat top right;
+}
+aside ul li a p {
+    font-size: 0.87em;
+    color: #000;
 }
